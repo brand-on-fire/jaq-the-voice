@@ -182,24 +182,7 @@ To learn how this works, see http://wp.me/PEmnE-Bt
 		<div class="section-overlay"></div><!-- .section-overlay -->
 	<div class="section-inner">
 		<div class="section-wrap">
-			<script type="text/javascript">//<![CDATA[
-jQuery(document).ready(function($) {
-						new jPlayerPlaylist( {
-							jPlayer: "#jquery_jplayer_1489",
-							cssSelectorAncestor: "#jp_container_1489" },
-							[{  title : "I Can Fly", mp3:"./wp-content/uploads/2016/08/Jaquiel-The-Voice-I-can-fly.mp3", artist : "Jaquiel The Voice" ,download : "./wp-content/uploads/2016/08/Jaquiel-The-Voice-I-can-fly.mp3" ,poster : "./wp-content/uploads/2014/04/The-Natural-album-cover-square.jpg"  },{  title : "Out of Love", mp3:"./wp-content/uploads/2016/03/Jaquiel-Out-of-Love.mp3", artist : "Jaquiel The Voice" ,download : "./wp-content/uploads/2016/03/Jaquiel-Out-of-Love.mp3" ,poster : "./wp-content/uploads/2016/03/The-Natural.jpg"  },{  title : "RIDE", mp3:"./wp-content/uploads/2016/03/Jaquiel-RIDE.mp3", artist : "Jaquiel The Voice" ,download : "./wp-content/uploads/2016/03/Jaquiel-RIDE.mp3" ,poster : "./wp-content/uploads/2016/03/The-Natural.jpg"  },{  title : "Nowhere to Run", mp3:"./wp-content/uploads/2016/06/Jaquiel-Nowhere-to-Run.mp3", artist : "Jaquiel The Voice" ,download : "./wp-content/uploads/2016/06/Jaquiel-Nowhere-to-Run.mp3" ,poster : "./wp-content/uploads/2014/04/The-Natural-album-cover-square.jpg"  },{  title : "All She Wanted", mp3:"./wp-content/uploads/2016/06/Jaquiel-All-she-wanted.mp3", artist : "Jaquiel The Voice" ,download : "./wp-content/uploads/2016/06/Jaquiel-All-she-wanted.mp3" ,poster : "./wp-content/uploads/2014/04/The-Natural-album-cover-square.jpg"  },{  title : "HIGH", mp3:"./wp-content/uploads/2016/06/Jaquiel-HIGH.mp3", artist : "Jaquiel The Voice" ,download : "./wp-content/uploads/2016/06/Jaquiel-HIGH.mp3" ,poster : "./wp-content/uploads/2014/04/The-Natural-album-cover-square.jpg"  },{  title : "Wakeful Dreamin\' (Diamonds & Gold)", mp3:"./wp-content/uploads/2016/03/Jaquiel-Wakeful-Dreamin-Diamonds-Gold.mp3", artist : "Jaquiel The Voice" ,download : "./wp-content/uploads/2016/03/Jaquiel-Wakeful-Dreamin-Diamonds-Gold.mp3" ,poster : "./wp-content/uploads/2016/03/Between-Colored-Lines.jpg"  },{  title : "In the Dark", mp3:"./wp-content/uploads/2016/03/Jaquiel-In-the-Dark.mp3", artist : "Jaquiel The Voice" ,download : "./wp-content/uploads/2016/03/Jaquiel-In-the-Dark.mp3" ,poster : "./wp-content/uploads/2016/03/Between-Colored-Lines.jpg"  }], {
-							swfPath: "wp-content/plugins/wolf-jplayer/assets/js/src",
-							wmode: "window"});jQuery(".wolf-jp-popup").click(function() {
-					Player = $(this).parent().prev();
-					Player.jPlayer("stop");
-			 		var url = jQuery(this).attr("href");
-			 		var popupHeight = jQuery(this).parents(".wolf-jplayer-playlist-container").height();
-					var popup = window.open(url,"null", "height=" + popupHeight + ",width=570, top=150, left=150");
-					if (window.focus) {
-						popup.focus();
-					}
-					return false;
-			});});//]]></script><!-- jPlayer -->
+			<!-- jPlayer -->
 				<div class="wolf-jplayer-playlist-container">
 					<div class="wolf-jplayer-loader-overlay"><div class="wolf-jplayer-loader"></div></div>
 					<div class="wolf-jplayer-playlist">
@@ -223,10 +206,10 @@ jQuery(document).ready(function($) {
 							</div>
 							<div class="clear"></div>
 							<div class="wolf-jp-share-socials">
-								<a class="wolf-share-jp-popup" href="http://www.facebook.com/sharer.php?u=player/?playlist_id=1&t=Home+%7C+Jaq+the+Voice" title="Share on facebook" target="_blank">
+								<a class="wolf-share-jp-popup" title="Share on facebook" target="_blank">
 								<span id="wolf-jplayer-facebook-button"></span>
 								</a>
-								<a class="wolf-share-jp-popup" href="http://twitter.com/home?status=Home+%7C+Jaq+the+Voice+-+player/?playlist_id=1" title="Share on twitter" target="_blank">
+								<a class="wolf-share-jp-popup" title="Share on twitter" target="_blank">
 								<span id="wolf-jplayer-twitter-button"></span>
 								</a>
 							</div>
@@ -277,7 +260,7 @@ jQuery(document).ready(function($) {
 
 					<div class="jp-no-solution">
 						<span>Update Required</span>
-						To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+						To play the media you will need to either update your browser to a recent version or update your <a target="_blank">Flash plugin</a>.
 					</div>
 
 					</div>
@@ -430,7 +413,7 @@ jQuery(document).ready(function($) {
 							<td class="wolf-show-venue wolf-show-mobile-hide"></td>
 
 							<td class="wolf-show-icons">
-															<a href="http://facebook.com/jaquielmusic" class="wolf-show-facebook" target="_blank" title="View the facebook event page"></a>
+															<a class="wolf-show-facebook" target="_blank" title="View the facebook event page"></a>
 																					</td>
 
 							<td class="wolf-show-action">
