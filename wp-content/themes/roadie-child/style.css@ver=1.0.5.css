@@ -7,3 +7,28 @@ Author URI: http://wolfthemes.com/
 Template: roadie
 Version: 1.0.0
 */
+
+/* === Brand on Fire portfolio archive: surgical fixes (static, JS stripped) === */
+/* 1. JS normally hides these on window.load / ajax-close; JS is stripped in the archive,
+      so #loading-overlay would spin forever and #overlay (ajax transition layer) would stay
+      opaque white over the whole page. Hide both. */
+#loading-overlay,#loader,#overlay{display:none!important;visibility:hidden!important}
+
+/* 2. Hero background video (YouTube bg) cannot play in the static archive and the
+      source had an empty video id, so the masthead was a blank black box. Restore the
+      site's own hero photo as a static background (same image the theme uses for .hero-inner). */
+.parallax-inner{background:#222 url("../../../wp-content/uploads/2015/10/5002530882_447ec8f7ec_o.jpg") center center/cover no-repeat!important}
+/* The empty YouTube container paints a solid #0d0d0d box on top of the hero; give the
+   masthead one the same hero photo so the hero is never a black void. */
+#masthead .video-bg-container,#youtube-video-bg-7596-container{background:#222 url("../../../wp-content/uploads/2015/10/5002530882_447ec8f7ec_o.jpg") center center/cover no-repeat!important}
+
+/* 3. The #videos section + Videos page used the same empty YouTube background.
+      Give those video-bg containers the artist's own music-video frame instead of black. */
+.section-videos .video-bg-container,#youtube-video-bg-4077-container,#youtube-video-bg-2739-container{background:#0d0d0d url("../../../wp-content/uploads/2014/04/maxresdefault.jpg") center center/cover no-repeat!important}
+
+/* 4. Single video page: render the artist's video poster (static) where the bare
+      YouTube URL used to print, with a play badge. */
+.wolf-video .entry-content .bof-video-poster{display:block;position:relative;max-width:960px;margin:0 auto}
+.wolf-video .entry-content .bof-video-poster img{display:block;width:100%;height:auto}
+.wolf-video .entry-content .bof-video-poster .bof-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:84px;height:84px;border-radius:50%;background:rgba(0,0,0,.55);border:3px solid #fff}
+.wolf-video .entry-content .bof-video-poster .bof-play:after{content:"";position:absolute;top:50%;left:54%;transform:translate(-50%,-50%);border-style:solid;border-width:16px 0 16px 26px;border-color:transparent transparent transparent #fff}
